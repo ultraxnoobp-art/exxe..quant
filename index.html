@@ -217,7 +217,7 @@ const LX=0.052;
 const YP=187,  FP=77;   // pair:  top=26%, font=6%
 const YB=300,  FB=19;   // badge: top=39%, font=2.6%
 const YR=353,  FR=123;  // roi:   top=49%, font=17%
-const YPR=598, FPR=25;  // prices: top=75%, font=3.5%
+const YPR=572, FPR=25;  // prices: top=75%, font=3.5%
 
 function rrect(ctx,x,y,w,h,r){
   ctx.beginPath();
@@ -281,7 +281,7 @@ async function renderCard(canvas, W, H, st) {
   // USD PNL
   if(st.usdStr){
     const fU=Math.round(21*s);
-    const uY=YR*s+fR+Math.round(6*s);
+    const uY=YR*s+fR+Math.round(18*s);
     ctx.font=`700 ${fU}px 'Barlow',sans-serif`;
     ctx.fillStyle=G;
     ctx.shadowColor=`rgba(${GA},0.5)`; ctx.shadowBlur=Math.round(10*s);
